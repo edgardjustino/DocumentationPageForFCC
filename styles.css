@@ -6,8 +6,73 @@
 }
 
 :root {
-    --blue: ;
-    --bgcinza: ;
-    --bg: ;
+    --blue: rgb(65, 153, 208) ;
+    --bgcinza: rgb(45, 44, 44) ;
+    --bg: black;
 }
 /* var(--blue); */
+
+body {
+    background-color: var(--bg);
+    color: whitesmoke;
+}
+
+#navbar {
+    position: fixed;
+    min-width: 290px;
+    background-color: black;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+}
+
+nav ul a{
+    display: block;
+    color: whitesmoke;
+    text-decoration: none;
+    background-color: var(--bgcinza);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+header {
+    padding: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#main-doc header {
+    text-align: left;
+    margin: 0;
+}
+
+#main-doc {
+    /* align-items: center;
+    justify-content: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-left: 310px;
+}
+
+.main-section{
+    background-color: var(--bgcinza);
+    margin: 15px;
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 700px;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-section p {
+    margin-bottom: 20px;
+}
+
+
+
